@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>red store</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
+	</head>
+	<style>
+		body{
+    background: rgb(221, 208, 208);
+    
+    
+}
+		.table{
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+    background: rgb(255, 250, 250);
+    border-radius:10px;
+    transition: all .1s ease 0s;
+	width: 400px ;
+	height: 495px;
+	
+    
+}
+.title{
+    background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
+    padding: 40px 20px 170px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    overflow: hidden;
+
+}
+.title::before{
+    content: "";
+    height: 200px;
+    width: 280px;
+    position: absolute;
+    bottom: -175px;
+    left: -46px;
+    background: #fff;
+    border-radius: 80px;
+    transform: rotate(-85deg);
+}
+.title::after{
+    content: "";
+    height: 200px;
+    width: 280px;
+    position: absolute;
+    top: 150px;
+    right: -70px;
+    bottom: auto;
+    left: auto;
+    background: #fff;
+    border-radius: 100px;
+    transform: rotate(-40deg);
+}
+.price{
+    width: 125px;
+    height: 90px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    background:#fff;
+    color: #404040;
+    display: inline-block;
+    padding: 30px 0;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 600;
+    border-radius: 50%;
+    transform: translate(-50%);
+    transition: all .3s ease 0s;
+    box-shadow: 0 0 0 8px rgba(0, 0, 0,.3);
+
+}
+
+.table:hover .price{
+
+background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
+
+}
+.month{
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0;
+}
+.content{
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+    text-align: left;
+    transition: all .1s ease 0s;
+
+}
+.content li{
+    padding: 7px 0 7px 50px;
+    position: relative;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.content li::before{
+    content: "\f00c";
+    height: 24px;
+    width: 24px;
+    font-family: "Font Awesome 5 Free";
+    font-weight:900;
+    line-height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fb6ee5;
+    color: #fb6ee5;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+
+
+
+}
+.click{
+    background: linear-gradient( to bottom right, #fa6fe6, #ffef65);
+    position: relative;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    display: inline-block;
+    color: #404040;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .1s ease 0s;
+    z-index: 1;
+
+
+}
+.click:hover{
+    color: #fff;
+
+
+
+}
+.click::before{
+    content: "";
+    height: 92%;
+    width:98%;
+    position: absolute;
+    top:2px;
+    left: 2px;
+    background: #fff;
+    border-radius: 30px;
+    z-index: -1;
+
+
+}
+.click:hover::before{
+    background: 0 0;
+}
+.table2 .title{
+    background: linear-gradient(to bottom right, #44f2b5, #4cbde2);
+
+}
+.table2:hover .price{
+
+ background: linear-gradient(to bottom right, #44f2b5, #4cbde2);
+
+}
+.table2.content li::before{
+ color: #4bc7db;
+ border-color: #4bc7db;
+}
+.table2 .click{
+    background: linear-gradient(to bottom right, #44f2b5, #4cbde2);
+
+}
+
+	</style>
+
+	<div class="header">
+		<div class="container">
+		<div class="navbar">
+	<div class="logo">
+		<img src="logo.png"width="125px"height="60px">
+	</div>
+	<nav>
+		<ul>
+			<li><a href="#index">Home</a></li>
+			<li><a href="buypage.html">Get Subscriber</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+	<img src="menu.png" alt="menu"class="menu-icon" onclick="menutoggle()">
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<h1>Get free <br>social media <br>comments & Likes</h1>
+			<p>Easily Get 100% real Subscriber and Likes,No password,<br>No risk 100% real and safe.</p>
+			<a href="freee.html"class="btn">Get free subscriber</a>
+			<a href="buypage.html"class="btn1">Buy Subscriber</a>
+			<a href="buycomments&likes.html"class="btn2">Buy comments& likes</a>
+		</div>
+		<div class="col-2">
+			<img src="graph.png">
+
+		</div>
+
+	</div>
+
+
+	</div>
+	</div>
+
+<div class="box">
+	<p>Get</p>
+	<div class="you"><p>YouTube Subscriber</p></div>
+	
+</div>
+<!--first buy-->
+
+<div class="container">
+	<div class="row">
+		<!--table 1--->
+		<div class="col-md-4 col-sm-6">
+			<div class="table">
+				<h3 class="title">Get Free </h3>
+				<div class="price">
+					$0.0
+					<span class="month">Unlimited</span>
+				</div>
+				<ul class="content">
+					<li>One click One Subscriber</li>
+					<li>option to get like,comments</li>
+					<li>No password,No verification</li>
+					<li>Get you order in 24h</li>
+					<li>24/7 support</li>
+
+
+
+
+				</ul>
+				<a href="form.html" class="click">Click Now</a>
+			</div>
+		</div>
+		<!----- pricing table 2-->
+		<br>
+		<div class="col-md-4 col-sm-6">
+			<div class="table table2">
+				<h3 class="title">Buy Now Get Fast</h3>
+				<div class="price">
+					$6.99
+					<span class="month">300+</span>
+				</div>
+				<ul class="content">
+					<li>100% Real user</li>
+					<li>Conformation Mail sent after conform order</li>
+					<li>No password,No verification</li>
+					<li>Get you order in 5 hour</li>
+					<li>24/7 support</li>
+
+
+
+
+				</ul>
+				<a href="form.html"" class="click">Buy now</a>
+			</div>
+		</div>
+	</div>
+</div>
+<p>  <br></p>
+	 <!--Contact form---->
+	 <section id="contact">
+		<div class="contact-row">
+			<div class="contact-left-col">
+				<img src="b3.png" alt="contact img">
+	
+			</div>
+			<div class="contact-right-col">
+				<h2>Connect with us..</h2>
+				<form class=""action="index.html" method="post">
+					<input type="text" name="" id="" placeholder="Name">
+					<input type="email" name="" id=""placeholder="E-mail">
+					<textarea name="" id="" cols="80" rows="8"></textarea><br>
+					<button type="button" name="button"class="common-btn">SEND</button>
+				</form>
+	
+			</div>
+		</div>
+	
+	   </section>
+		<!-------footer------>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download App for Android And ios mobile phone</p>
+				</div>
+				<div class="footer-col-2">
+					<img src="logo.png"width="125px">
+					<p>Our Purpose Is To Sustainably Make The Pleasure and Benefits of Sports Accessible to the many</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>FAQS</li>
+						<li>Blog Post</li>
+							<li>Refund Policy</li>
+							<li>Reffer&Earn</li>
+						</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Instagram</li>
+						<li>Twitter</li>
+							<li>Discord</li>
+							<li>You Tube</li>
+						</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="COPY">&copy;Copyright 2023 - xypo</p>
+		</hr>
+	</div>
+	
+	</div>
+	
+	
+	<script>
+		var MenuItems = document.getElementById("MenuItems");
+		MenuItems.style.maxHeight="0px";
+		function menutoggle(){
+			if(MenuItems.style.maxHeight == "0px")
+			{
+				MenuItems.style.maxHeight == "200px";
+			}
+			else{
+				MenuItems.style.maxHeight == "0px";
+			}
+		}
+		</script>
+	
+	
+	</body>
+	</html>

@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#orderNow.container{
+    width: 700px;
+padding: 80px 45px;
+overflow: hidden;
+max-width: 1140px;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
+box-shadow: rgba(38, 124, 198, 0.2) 0px 6px 35px 0px;
+margin: 100px auto 40px;
+outline: rgb(66, 153, 225) solid 1px !important
+}
+
+.lable{
+    display: inline-block;
+margin-bottom: 0.5rem;
+font-size: 18px;
+padding-top: 20px;
+outline: rgb(66, 153, 225) solid 1px !important
+}

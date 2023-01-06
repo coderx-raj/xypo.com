@@ -1,0 +1,139 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container{
+    width:100%;
+    min-height: 50vh;
+    background-color: rgb(174, 105, 188);
+    
+
+}
+.container h2{
+    color: azure;
+    font-size: 30px;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: #eaebed;
+}
+.price-row{
+    width:90%;
+    max-width: 1100px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:25px;
+    
+    
+}
+.price-col{
+    background: #1f283b;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+    
+    
+
+}
+.card span{
+    position:absolute;
+
+}
+.price-col p{
+    font-size: 22px;
+    
+}
+.price-col h3{
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+.price-col ul{
+    text-align: left;
+    margin: 20px;
+    color: #ddd;
+    list-style: circle;
+
+}
+.price-col ul li{
+    margin: 15px 0;
+}
+.price-col button{
+    width:100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.price-col button:hover{
+    background:#e33058;
+
+
+}
+/*header nav bar*/
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+   
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.p{
+    color: #fff;
+}
+.container{
+    max-width: 1500px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.row{
+    display:flex ;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width:100%;
+    padding:50px 0;
+
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+
+}
+
+
+    
