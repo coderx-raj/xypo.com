@@ -32,6 +32,10 @@ nav ul li{
     font-weight: bold;
     border-radius: 5px;
 }
+.navbar ul:hover{
+    background-color:white;
+    color:black;
+}
 .p{
     color: #555;
 }
