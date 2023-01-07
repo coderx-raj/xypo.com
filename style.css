@@ -32,9 +32,7 @@ nav ul li{
     font-weight: bold;
     border-radius: 5px;
 }
-  a:hover{
-    background-color:white;
-    color:black;
+
 }
 .p{
     color: #555;
