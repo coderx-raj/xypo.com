@@ -5,186 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Xypo home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="table.css">
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
 	</head>
 	<style>
-		body{
-    background: rgb(221, 208, 208);
-    
-    
-}
-		.table{
-    padding-bottom: 20px;
-    position: relative;
-    text-align: center;
-    background: rgb(255, 250, 250);
-    border-radius:10px;
-    transition: all .1s ease 0s;
-	width: 400px ;
-	height: 495px;
 	
-    
-}
-.title{
-    background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
-    padding: 40px 20px 170px;
-    margin: 0;
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-    text-transform: uppercase;
-    color: #fff;
-    overflow: hidden;
-
-}
-.title::before{
-    content: "";
-    height: 200px;
-    width: 280px;
-    position: absolute;
-    bottom: -175px;
-    left: -46px;
-    background: #fff;
-    border-radius: 80px;
-    transform: rotate(-85deg);
-}
-.title::after{
-    content: "";
-    height: 200px;
-    width: 280px;
-    position: absolute;
-    top: 150px;
-    right: -70px;
-    bottom: auto;
-    left: auto;
-    background: #fff;
-    border-radius: 100px;
-    transform: rotate(-40deg);
-}
-.price{
-    width: 125px;
-    height: 90px;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    background:#fff;
-    color: #404040;
-    display: inline-block;
-    padding: 30px 0;
-    font-size: 30px;
-    line-height: 50px;
-    font-weight: 600;
-    border-radius: 50%;
-    transform: translate(-50%);
-    transition: all .3s ease 0s;
-    box-shadow: 0 0 0 8px rgba(0, 0, 0,.3);
-
-}
-
-.table:hover .price{
-
-background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
-
-}
-.month{
-    display: block;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 0;
-}
-.content{
-    list-style: none;
-    padding: 0;
-    margin: 20px;
-    text-align: left;
-    transition: all .1s ease 0s;
-
-}
-.content li{
-    padding: 7px 0 7px 50px;
-    position: relative;
-    color: #000;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-.content li::before{
-    content: "\f00c";
-    height: 24px;
-    width: 24px;
-    font-family: "Font Awesome 5 Free";
-    font-weight:900;
-    line-height: 20px;
-    border-radius: 50%;
-    border: 2px solid #fb6ee5;
-    color: #fb6ee5;
-    text-align: center;
-    position: absolute;
-    top:50%;
-    left: 12px;
-    transform: translateY(-50%);
-
-
-
-
-}
-.click{
-    background: linear-gradient( to bottom right, #fa6fe6, #ffef65);
-    position: relative;
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 30px;
-    display: inline-block;
-    color: #404040;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all .1s ease 0s;
-    z-index: 1;
-
-
-}
-.click:hover{
-    color: #fff;
-
-
-
-}
-.click::before{
-    content: "";
-    height: 92%;
-    width:98%;
-    position: absolute;
-    top:2px;
-    left: 2px;
-    background: #fff;
-    border-radius: 30px;
-    z-index: -1;
-
-
-}
-.click:hover::before{
-    background: 0 0;
-}
-.table2 .title{
-    background: linear-gradient(to bottom right, #44f2b5, #4cbde2);
-
-}
-.table2:hover .price{
-
- background: linear-gradient(to bottom right, #44f2b5, #4cbde2);
-
-}
-.table2.content li::before{
- color: #4bc7db;
- border-color: #4bc7db;
-}
-.table2 .click{
-    background: linear-gradient(to bottom right, #44f2b5, #4cbde2);
-
-}
 
 	</style>
 
@@ -194,8 +22,8 @@ background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
 	<div class="logo">
 		<img src="logo.png"width="125px"height="60px">
 	</div>
-	<nav>
-		<ul>
+	<nav  id="MenuItems" class=" nav-list ">
+		<ul class="h-list h-nav">
 			<li><a href="#index">Home</a></li>
 			<li><a href="buypage.html">Get Subscriber</a></li>
 			<li><a href="">About</a></li>
@@ -208,9 +36,11 @@ background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
 		<div class="col-2">
 			<h1>Get free <br>social media <br>comments & Likes</h1>
 			<p>Easily Get 100% real Subscriber and Likes,No password,<br>No risk 100% real and safe.</p>
+			<div class="btn-list">
 			<a href="freee.html"class="btn">Get free subscriber</a>
-			<a href="buypage.html"class="btn1">Buy Subscriber</a>
-			<a href="buycomments&likes.html"class="btn2">Buy comments& likes</a>
+			<a href="buypage.html"class="btn">Buy Subscriber</a>
+			<a href="buycomments&likes.html"class="btn">Buy comments& likes</a>
+		</div>
 		</div>
 		<div class="col-2">
 			<img src="graph.png">
@@ -343,6 +173,7 @@ background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
 		var MenuItems = document.getElementById("MenuItems");
 		MenuItems.style.maxHeight="0px";
 		function menutoggle(){
+			
 			if(MenuItems.style.maxHeight == "0px")
 			{
 				MenuItems.style.maxHeight == "200px";
@@ -351,6 +182,14 @@ background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
 				MenuItems.style.maxHeight == "0px";
 			}
 		}
+
+		hellos = document.querySelector(".menu-icon");
+		navList = document.querySelector(".h-list");
+
+		hellos.addEventListener('click',()=>{
+		navList.classList.toggle('h-nav');
+	});
+
 		</script>
 	
 	
